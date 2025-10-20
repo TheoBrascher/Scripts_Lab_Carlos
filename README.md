@@ -22,7 +22,7 @@ Parâmetros obrigatórios:
 		Nesse caso, serão filtradas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 35%.
 
 
-### 2. Rodar o script filtrar_PTS.py
+## 2. Rodar o script filtrar_PTS.py
 ### 🧩 Função
 - Este script irá contar a quantidade de motivos PTS de cada sequência fasta.
 - A quantidade será anotada na descrição da sequência FASTA
@@ -48,8 +48,8 @@ output_name.fasta -> nome do arquivo que será gerado com as sequências filtrad
                 Nesse caso, serão filtradas as sequências que apresentarem um numéro de motivo PTS igual ou maior que 20.
 
 
-###  3. Submeter as sequências no programa NetOGlyc - 4.0
-site -> https://services.healthtech.dtu.dk/services/NetOGlyc-4.0/
+##  3. Submeter as sequências no programa NetOGlyc - 4.0
+### 🧩 site -> https://services.healthtech.dtu.dk/services/NetOGlyc-4.0/
 
 - O arquivo contendo as sequêncais filtradas deverão passar pelo programa NetOGlyc para analisar as glicosilações das sequências.
 	Aqui é indicado o parcionamento das sequências pois o programa tem um limite de tempo. Se rodar muitas sequências, é muito provável que a análise irá superar o limite de tempo, não gerando output.
@@ -81,7 +81,7 @@ output_name -> ATENÇÃO!! aqui é somente um nome para o script usar de referê
                 Nesse caso, serão gerados arquivos contendo 100 sequências cada.
 
 
-### 4. Rodar o script filtrar_OG20.py
+## 4. Rodar o script filtrar_OG20.py
 ### 🧩 Função
 - Este script contar a quantidade de sítios de glicosição das sequências. 
 - Após a contagem, o script irá verificar se a sequência possui 20% de sítios POSITIVES para glicosilações preditas pelo programa NetOGlyc.
@@ -96,7 +96,7 @@ Parâmetros obrigatórios:
 --saida output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
 
 
-### 5. Rodar o script count_CYS.py
+## 5. Rodar o script count_CYS.py
 ### 🧩 Função
 - Este script irá contar a quantidade de Cisteínas presente na sequência e deixar anotada em sua descrição.
        Ex:
@@ -113,7 +113,7 @@ input_name.fasta -> nome do arquivo que queres analisar.
 output_name.fasta -> nome do arquivo que queres gerar depois da análise.
 
 
-### 5. Rodar as sequências filtradas no Interproscan e anotar a descrição de cada uma.
+## 5. Rodar as sequências filtradas no Interproscan e anotar a descrição de cada uma.
 ### 🧩 Site -> https://www.ebi.ac.uk/interpro/search/sequence/
 
 
