@@ -1,26 +1,22 @@
-PROTOCOLO PARA USO DOS SCRITPS
+# PROTOCOLO PARA USO DOS SCRITPS
+Scripts para análise e filtragem de sequências proteicas
 
-
-count_CYS.py
-filtrar_OG20.py
-filtrar_PTS.py
-filtrar_ST30.py
-
-
-1. Rodar o script filtrar_ST20.py
-
+## 1. Rodar o script filtrar_ST20.py
+### 🧩 Função
 - Este script irá contar o número de Serinas e Treoninas de cada sequência fasta. 
 - Após a contagem, o script irá verificar a porcentagem (limiar) de Serina+Treonia em relação a sequência toda.
-	Caso der uma porcentagem maior que o limiar (20%), ela irá selecionar essa sequência para ser salva.
+ 	Caso der uma porcentagem maior que o limiar (20%), ela irá selecionar essa sequência para ser salva.
 	Caso não respeitar essa porcentagem, a sequência é descartada.
 	Como resultado, apenas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 20% serão salvas.
 
-Como rodar o script:
+### ⚙️ Uso
+	Como rodar o script:
 ./filtrar_ST20.py input_name.fasta output_name.fasta 
-input_name.fasta -> nome do arquvio para ser analisado
-output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
+Parâmetros obrigatórios:
+- input_name.fasta -> nome do arquvio para ser analisado
+- output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
 
-Opções de modificação
+### 🧠 Opções de modificação
 --limiar LIMIAR  Porcentagem mínima de S + T (padrão: 20.0%)
 	Pode alterar o limiar com a flag --limiar
 	Exemplo: ./filtrar_ST20.py input_name.fasta output_name.fasta --limar 35
@@ -121,4 +117,4 @@ output_name.fasta -> nome do arquivo que queres gerar depois da análise.
 Site -> https://www.ebi.ac.uk/interpro/search/sequence/
 
 
-# Scripts_Lab_Carlos
+
