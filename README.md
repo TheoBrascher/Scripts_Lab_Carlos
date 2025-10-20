@@ -39,8 +39,9 @@ Parâmetros obrigatórios:
 ### ⚙️ Uso
 	Como rodar o script: ./filtrar_PTS.py input_name.fasta output_name.fasta 
 Parâmetros obrigatórios:
-input_name.fasta -> nome do arquvio para ser analisado
-output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
+- input_name.fasta -> nome do arquvio para ser analisado
+  
+- output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
 
 ### 🧠 Opções de modificação
 --limiar LIMIAR  Quantidade de motivos PTS mínimo para filtar as sequências
@@ -70,8 +71,9 @@ output_name.fasta -> nome do arquivo que será gerado com as sequências filtrad
 ### ⚙️ Uso
 	Como rodar o script:./get_fasta_split.py input_name.fasta output_name
 Parâmetros obrigatórios:
-input_name.fasta -> nome do arquvio para ser analisado
-output_name -> ATENÇÃO!! aqui é somente um nome para o script usar de referência.
+- input_name.fasta -> nome do arquvio para ser analisado
+
+- output_name -> ATENÇÃO!! aqui é somente um nome para o script usar de referência.
 	Ex.: Mucins_test
 	Reultado esperado, Mucins_test_1, Mucins_test_2, Mucins_test_3 ...	
 	
@@ -93,7 +95,9 @@ output_name -> ATENÇÃO!! aqui é somente um nome para o script usar de referê
 	Como rodar o script:./filtrar_OG20.py --fasta input_name.fasta --gff input_gff.txt --saida output_name.fasta
 Parâmetros obrigatórios:
 --fasta input_name.fasta -> nome do arquvio para ser analisado
+
 --gff input_gff.txt -> nome do arquivo txt que foi salvo com as informações do NetOGlyc ❗
+
 --saida output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
 
 
@@ -110,8 +114,9 @@ Como será contada também o PTS em scripts anteriores, é provável que fique a
 ### ⚙️ Uso
 	Como rodar o script: ./count_CYS.py input_name.fasta output_name.fasta
 Parâmetros obrigatórios:
-input_name.fasta -> nome do arquivo que queres analisar.
-output_name.fasta -> nome do arquivo que queres gerar depois da análise.
+- input_name.fasta -> nome do arquivo que queres analisar.
+
+- output_name.fasta -> nome do arquivo que queres gerar depois da análise.
 
 
 ## 5. Rodar as sequências filtradas no Interproscan e anotar a descrição de cada uma.
