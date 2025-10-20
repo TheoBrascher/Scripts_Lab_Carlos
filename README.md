@@ -13,6 +13,7 @@ Scripts para análise e filtragem de sequências proteicas
 	Como rodar o script:./filtrar_ST20.py input_name.fasta output_name.fasta 
 Parâmetros obrigatórios:
 - input_name.fasta -> nome do arquvio para ser analisado
+  
 - output_name.fasta -> nome do arquivo que será gerado com as sequências filtradas
 
 ### 🧠 Opções de modificação
