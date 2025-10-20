@@ -86,7 +86,9 @@ Parâmetros obrigatórios:
 ### 🧠 Opções de modificação
 --limiar LIMIAR  altera a quantidade de sequências por arquivo. 
 -Pode alterar o limiar com a flag --limiar
+
 -Exemplo: ./ get_fasta_split.py input_name.fasta output_nam --limar 100 
+
 -Nesse caso, serão gerados arquivos contendo 100 sequências cada.
 
 
