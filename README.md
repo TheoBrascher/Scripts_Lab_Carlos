@@ -9,8 +9,8 @@ Scripts para análise e filtragem de sequências proteicas
 	Caso não respeitar essa porcentagem, a sequência é descartada.
 	Como resultado, apenas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 20% serão salvas.
 
-### ⚙️ Uso
-	Como rodar o script:./filtrar_ST20.py input_name.fasta output_name.fasta 
+### ⚙️ Como rodar o script
+	./filtrar_ST20.py input_name.fasta output_name.fasta 
 Parâmetros obrigatórios:
 - input_name.fasta -> nome do arquvio para ser analisado
   
@@ -36,8 +36,8 @@ Parâmetros obrigatórios:
 	Caso negativo, ela será descartada.
 	Como resultado, serão salvas as sequências que apresentarem um numéro de motivo PTS igual ou maior que 3.
 
-### ⚙️ Uso
-	Como rodar o script: ./filtrar_PTS.py input_name.fasta output_name.fasta 
+### ⚙️ Como rodar o script
+	./filtrar_PTS.py input_name.fasta output_name.fasta 
 Parâmetros obrigatórios:
 - input_name.fasta -> nome do arquvio para ser analisado
   
@@ -68,8 +68,8 @@ Parâmetros obrigatórios:
 - Pode utilizar o script get_fasta_split.py para parcionar o arquivo fasta.
 	🧩 Esse script irá dividir o arquivo fasta em outros arquivos contando 30 sequências cada (limiar)
 
-### ⚙️ Uso
-	Como rodar o script:./get_fasta_split.py input_name.fasta output_name
+### ⚙️ Como rodar o script
+	/get_fasta_split.py input_name.fasta output_name
 Parâmetros obrigatórios:
 - input_name.fasta -> nome do arquvio para ser analisado
 
@@ -91,8 +91,8 @@ Parâmetros obrigatórios:
         Caso positivo, ela irá selecionar essa sequência para ser salva.
         Caso negativo, ela será descartada.
 
-### ⚙️ Uso
-	Como rodar o script:./filtrar_OG20.py --fasta input_name.fasta --gff input_gff.txt --saida output_name.fasta
+### ⚙️ Como rodar o script
+	./filtrar_OG20.py --fasta input_name.fasta --gff input_gff.txt --saida output_name.fasta
 Parâmetros obrigatórios:
 --fasta input_name.fasta -> nome do arquvio para ser analisado
 
@@ -111,8 +111,8 @@ Parâmetros obrigatórios:
 Como será contada também o PTS em scripts anteriores, é provável que fique assim:
 	Depois: >SEQ012871 Número de motivos PTS = 5 Número de motivos Cys = 50
 
-### ⚙️ Uso
-	Como rodar o script: ./count_CYS.py input_name.fasta output_name.fasta
+### ⚙️ Como rodar o script
+	./count_CYS.py input_name.fasta output_name.fasta
 Parâmetros obrigatórios:
 - input_name.fasta -> nome do arquivo que queres analisar.
 
