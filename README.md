@@ -4,10 +4,14 @@ Scripts para análise e filtragem de sequências proteicas
 ## 1. Rodar o script filtrar_ST20.py
 ### 🧩 Função
 - Este script irá contar o número de Serinas e Treoninas de cada sequência fasta. 
+
 - Após a contagem, o script irá verificar a porcentagem (limiar) de Serina+Treonia em relação a sequência toda.
- 	Caso der uma porcentagem maior que o limiar (20%), ela irá selecionar essa sequência para ser salva.
-	Caso não respeitar essa porcentagem, a sequência é descartada.
-	Como resultado, apenas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 20% serão salvas.
+
+- Caso der uma porcentagem maior que o limiar (20%), ela irá selecionar essa sequência para ser salva.
+
+- Caso não respeitar essa porcentagem, a sequência é descartada.
+
+-  Como resultado, apenas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 20% serão salvas.
 
 ### ⚙️ Como rodar o script
 	./filtrar_ST20.py input_name.fasta output_name.fasta 
@@ -29,6 +33,7 @@ Parâmetros obrigatórios:
 ## 2. Rodar o script filtrar_PTS.py
 ### 🧩 Função
 - Este script irá contar a quantidade de motivos PTS de cada sequência fasta.
+
 - A quantidade será anotada na descrição da sequência FASTA
 	Ex: 
 	Antes:  >SEQ012871
@@ -60,15 +65,22 @@ Parâmetros obrigatórios:
 ### 🧩 site -> https://services.healthtech.dtu.dk/services/NetOGlyc-4.0/
 
 - O arquivo contendo as sequêncais filtradas deverão passar pelo programa NetOGlyc para analisar as glicosilações das sequências.
-	Aqui é indicado o parcionamento das sequências pois o programa tem um limite de tempo. Se rodar muitas sequências, é muito provável que a análise irá superar o limite de tempo, não gerando output.
+
+- Aqui é indicado o parcionamento das sequências pois o programa tem um limite de tempo. Se rodar muitas sequências, é muito provável que a análise irá superar o limite de tempo, não gerando output.
 		Recomendável: 20-30 sequêncais por análise.
 
 - Deve salvar o resultado final do NetOGlyc em um arquivo de texto txt (Ex: Mucin_1_gff.txt)
-	❗❗ Cuidar para que as mesmas sequências fasta tenham o mesmo nome do arquivo txt que será gerado com as informações do NetOGlyc ❗❗
-	Ex: Mucin_1.fasta -> nome do arquivo de entrada para NetOGlyc
-	    Mucin_1_gff.txt -> nome do arquivo que será salvo as informações resultantes do NetOGlyc
 
-	Esse cuidado é importante pois no próximo passo será utilizado esses pares de arquivos!
+
+❗❗ Cuidar para que as mesmas sequências fasta tenham o mesmo nome do arquivo txt que será gerado com as informações do NetOGlyc ❗❗
+
+	
+--Ex: Mucin_1.fasta -> nome do arquivo de entrada para NetOGlyc
+
+- Mucin_1_gff.txt -> nome do arquivo que será salvo as informações resultantes do NetOGlyc
+
+
+❗❗ Esse cuidado é importante pois no próximo passo será utilizado esses pares de arquivos!
 
 ### 🧠 Dica
 - Pode utilizar o script get_fasta_split.py para parcionar o arquivo fasta.
