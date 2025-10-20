@@ -119,7 +119,7 @@ Parâmetros obrigatórios:
 - output_name.fasta -> nome do arquivo que queres gerar depois da análise.
 
 
-## 5. Rodar as sequências filtradas no Interproscan e anotar a descrição de cada uma.
+## 6. Rodar as sequências filtradas no Interproscan e anotar a descrição de cada uma.
 ### 🧩 Site -> https://www.ebi.ac.uk/interpro/search/sequence/
 
 
