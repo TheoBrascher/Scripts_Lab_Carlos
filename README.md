@@ -18,9 +18,9 @@ Parâmetros obrigatórios:
 
 ### 🧠 Opções de modificação
 --limiar LIMIAR  Porcentagem mínima de S + T (padrão: 20.0%)
-	Pode alterar o limiar com a flag --limiar
-	Exemplo: ./filtrar_ST20.py input_name.fasta output_name.fasta --limar 35
-		Nesse caso, serão filtradas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 35%.
+	-- Pode alterar o limiar com a flag --limiar
+	-- Exemplo: ./filtrar_ST20.py input_name.fasta output_name.fasta --limar 35
+		-- Nesse caso, serão filtradas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 35%.
 
 
 ## 2. Rodar o script filtrar_PTS.py
