@@ -19,11 +19,11 @@ Parâmetros obrigatórios:
 ### 🧠 Opções de modificação
 --limiar LIMIAR  Porcentagem mínima de S + T (padrão: 20.0%)
 
---Pode alterar o limiar com a flag --limiar
+-Pode alterar o limiar com a flag --limiar
 
--- Exemplo: ./filtrar_ST20.py input_name.fasta output_name.fasta --limar 35
+- Exemplo: ./filtrar_ST20.py input_name.fasta output_name.fasta --limar 35
 
--- Nesse caso, serão filtradas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 35%.
+- Nesse caso, serão filtradas as sequências com a quantidade de Serina+Treonia que forem maior ou igual a 35%.
 
 
 ## 2. Rodar o script filtrar_PTS.py
@@ -48,9 +48,12 @@ Parâmetros obrigatórios:
 
 ### 🧠 Opções de modificação
 --limiar LIMIAR  Quantidade de motivos PTS mínimo para filtar as sequências
-        Pode alterar o limiar com a flag --limiar
-        Exemplo: ./filtrar_PTS.py input_name.fasta output_name.fasta --limar 10
-                Nesse caso, serão filtradas as sequências que apresentarem um numéro de motivo PTS igual ou maior que 20.
+
+-Pode alterar o limiar com a flag --limiar
+
+-Exemplo: ./filtrar_PTS.py input_name.fasta output_name.fasta --limar 10
+                
+- Nesse caso, serão filtradas as sequências que apresentarem um numéro de motivo PTS igual ou maior que 20.
 
 
 ##  3. Submeter as sequências no programa NetOGlyc - 4.0
@@ -82,9 +85,9 @@ Parâmetros obrigatórios:
 	
 ### 🧠 Opções de modificação
 --limiar LIMIAR  altera a quantidade de sequências por arquivo. 
-        Pode alterar o limiar com a flag --limiar
-        Exemplo: ./ get_fasta_split.py input_name.fasta output_nam --limar 100 
-                Nesse caso, serão gerados arquivos contendo 100 sequências cada.
+-Pode alterar o limiar com a flag --limiar
+-Exemplo: ./ get_fasta_split.py input_name.fasta output_nam --limar 100 
+-Nesse caso, serão gerados arquivos contendo 100 sequências cada.
 
 
 ## 4. Rodar o script filtrar_OG20.py
